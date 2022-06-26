@@ -1,4 +1,6 @@
 Revision history for CLI-Ecosystem
 
 {{$NEXT}}
+
+0.0.1  2022-06-26T13:20:45+02:00
     - Initial version, split off of the Ecosystem distribution

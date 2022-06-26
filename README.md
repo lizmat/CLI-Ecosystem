@@ -22,15 +22,36 @@ DESCRIPTION
 
 CLI::Ecosystem installs the `ecosystem` CLI script that allows introspection of Raku Programming Language's Ecosystem Content Storage.
 
-Named arguments that are always available: --ecosystem the Ecosystem Content Storage to be used. rea | fez | p6c | cpan, default: rea --verbose boolean, show extended information, default: False
+Named arguments that are always available:
 
-Named arguments that are available in search and informational queries: --ver the :ver<> value to use, default: none --auth the :auth<> value to use, default: none --api the :api<> value to use, default: 0 --from the :from<> value to use, default: Raku
+    --ecosystem  the Ecosystem Content Storage to be used.
+                 rea | fez | p6c | cpan, default: rea
+    --verbose    boolean, show extended information, default: False
 
-Search queries (also looks in description): us use-target <string> use targets for optional string di distro <string> distribution names for optional string i identity <string> identities for optional string
+Named arguments that are available in search and informational queries:
 
-Informational queries: de dependencies string dependencies for given string re reverse-dependencies string reverse dependencies for given string m meta string key(s) META information for given string
+    --ver   the :ver<>  value to use, default: none
+    --auth  the :auth<> value to use, default: none
+    --api   the :api<>  value to use, default: 0
+    --from  the :from<> value to use, default: Raku
 
-Other queries: ri river <--top> most referenced modules unr unresolvable <--from> unresolvable dependencies, include <:from>? unv unversioned distributions without valid version
+Search queries (also looks in description):
+
+    us  use-target <string>  use targets for optional string
+    di  distro <string>      distribution names for optional string
+    i   identity <string>    identities for optional string
+
+Informational queries:
+
+    de  dependencies string          dependencies for given string
+    re  reverse-dependencies string  reverse dependencies for given string
+    m   meta string key(s)           META information for given string
+
+Other queries:
+
+    ri  river <--top>          most referenced modules
+    unr unresolvable <--from>  unresolvable dependencies, include <:from>?
+    unv unversioned            distributions without valid version
 
 All subcommands can be shortened as long as they are unique.
 
