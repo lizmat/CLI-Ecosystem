@@ -1,0 +1,11 @@
+use Test;
+
+{ # put into separate scope to prevent normal MAIN processing
+    use CLI::Ecosystem;
+}
+
+plan 1;
+
+pass "still alive";
+
+# vim: expandtab shiftwidth=4
