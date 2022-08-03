@@ -22,7 +22,10 @@ sub resolve($ecosystem, $needle, $ver, $auth, $api, $from) {
       $needle, :$ver, :$auth, :$api, :$from
 }
 
-use CLI::Version $?DISTRIBUTION, proto sub MAIN(|) is export {*}
+use CLI::Version:ver<0.0.5>:auth<zef:lizmat>
+  $?DISTRIBUTION,
+  proto sub MAIN(|) is export {*}
+
 multi sub MAIN(
   Bool() :$help      = False,  #= show this
   Str()  :$ecosystem = 'rea',  #= rea | fez | p6c | cpan
