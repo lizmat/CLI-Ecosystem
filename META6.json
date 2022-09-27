@@ -6,9 +6,9 @@
   "build-depends": [
   ],
   "depends": [
-    "Ecosystem:ver<0.0.16>:auth<zef:lizmat>",
-    "shorten-sub-commands:ver<0.0.5>:auth<zef:lizmat>",
-    "CLI::Version:ver<0.0.5>:auth<zef:lizmat>"
+    "Ecosystem:ver<0.0.17>:auth<zef:lizmat>",
+    "shorten-sub-commands:ver<0.0.6>:auth<zef:lizmat>",
+    "CLI::Version:ver<0.0.8>:auth<zef:lizmat>"
   ],
   "description": "Raku® Programming Language Ecosystem Inspector",
   "license": "Artistic-2.0",
@@ -28,5 +28,5 @@
   ],
   "test-depends": [
   ],
-  "version": "0.0.2"
+  "version": "0.0.3"
 }

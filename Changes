@@ -2,6 +2,11 @@ Revision history for CLI-Ecosystem
 
 {{$NEXT}}
 
+0.0.3  2022-09-27T16:35:17+02:00
+    - Bump dependency on Ecosystem, to get it installable again
+    - Bump dependency on CLI::Version, for fixes
+    - Bump dependency on shorten-sub-commands, for fixes
+
 0.0.2  2022-08-03T16:53:53+02:00
     - Bump dependency on CLI::Version
 

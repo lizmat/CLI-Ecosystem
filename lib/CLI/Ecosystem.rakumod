@@ -1,4 +1,4 @@
-use Ecosystem:ver<0.0.16>:auth<zef:lizmat>;
+use Ecosystem:ver<0.0.17>:auth<zef:lizmat>;
 use Identity::Utils:ver<0.0.10>:auth<zef:lizmat>;
 
 sub meh($message) { exit note $message }
@@ -22,7 +22,7 @@ sub resolve($ecosystem, $needle, $ver, $auth, $api, $from) {
       $needle, :$ver, :$auth, :$api, :$from
 }
 
-use CLI::Version:ver<0.0.5>:auth<zef:lizmat>
+use CLI::Version:ver<0.0.8>:auth<zef:lizmat>
   $?DISTRIBUTION,
   proto sub MAIN(|) is export {*}
 
@@ -338,7 +338,7 @@ multi sub MAIN("unversioned",
     }
 }
 
-use shorten-sub-commands:ver<0.0.5>:auth<zef:lizmat> &MAIN;
+use shorten-sub-commands:ver<0.0.6>:auth<zef:lizmat> &MAIN;
 
 =begin pod
 
