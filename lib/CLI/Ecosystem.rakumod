@@ -1,4 +1,4 @@
-use Ecosystem:ver<0.0.18>:auth<zef:lizmat>;
+use Ecosystem:ver<0.0.19>:auth<zef:lizmat>;
 use Identity::Utils:ver<0.0.10>:auth<zef:lizmat>;
 
 sub meh($message) { exit note $message }

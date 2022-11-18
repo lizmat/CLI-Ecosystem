@@ -6,7 +6,7 @@
   "build-depends": [
   ],
   "depends": [
-    "Ecosystem:ver<0.0.18>:auth<zef:lizmat>",
+    "Ecosystem:ver<0.0.19>:auth<zef:lizmat>",
     "shorten-sub-commands:ver<0.0.6>:auth<zef:lizmat>",
     "CLI::Version:ver<0.0.8>:auth<zef:lizmat>"
   ],
@@ -28,5 +28,5 @@
   ],
   "test-depends": [
   ],
-  "version": "0.0.5"
+  "version": "0.0.6"
 }

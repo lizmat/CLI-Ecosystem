@@ -2,6 +2,9 @@ Revision history for CLI-Ecosystem
 
 {{$NEXT}}
 
+0.0.6  2022-11-18T19:55:15+01:00
+    - Bump dependency on Ecosystem for fixes
+
 0.0.5  2022-09-28T10:11:57+02:00
     - Fix version pinning snafu
 
