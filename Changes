@@ -1,6 +1,8 @@
 Revision history for CLI-Ecosystem
 
 {{$NEXT}}
+
+0.0.7  2025-02-04T21:40:16+01:00
     - Basically deprecate in favour of App::Ecosystems
     - Bump dependencies to keep in sync
     - Added Identity::Utils as a dependency
