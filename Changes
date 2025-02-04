@@ -1,6 +1,11 @@
 Revision history for CLI-Ecosystem
 
 {{$NEXT}}
+    - Basically deprecate in favour of App::Ecosystems
+    - Bump dependencies to keep in sync
+    - Added Identity::Utils as a dependency
+    - Add CI badge for each OS
+    - Update copyright year
 
 0.0.6  2022-11-18T19:55:15+01:00
     - Bump dependency on Ecosystem for fixes

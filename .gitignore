@@ -1,3 +1,5 @@
 .precomp/
 /CLI-Ecosystem-*
 /releases/
+*.rakucov
+?

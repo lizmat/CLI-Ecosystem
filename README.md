@@ -1,4 +1,4 @@
-[![Actions Status](https://github.com/lizmat/CLI-Ecosystem/actions/workflows/test.yml/badge.svg)](https://github.com/lizmat/CLI-Ecosystem/actions)
+[![Actions Status](https://github.com/lizmat/CLI-Ecosystem/actions/workflows/linux.yml/badge.svg)](https://github.com/lizmat/CLI-Ecosystem/actions) [![Actions Status](https://github.com/lizmat/CLI-Ecosystem/actions/workflows/macos.yml/badge.svg)](https://github.com/lizmat/CLI-Ecosystem/actions) [![Actions Status](https://github.com/lizmat/CLI-Ecosystem/actions/workflows/windows.yml/badge.svg)](https://github.com/lizmat/CLI-Ecosystem/actions)
 
 NAME
 ====
@@ -16,6 +16,11 @@ App::Football (6x)
 Foo (3x)
 WebService::FootballData (5x)
 ```
+
+DEPRECATION NOTICE
+==================
+
+This distribution has basically been superseded by the [`App::Ecosystems`](https://raku.land/zef:lizmat/App::Ecosystems) distribution which provides a better user experience by providing a dedicated prompt from which to peruse an ecosystem, thereby being able to keep more state, and thus have less startup time.
 
 DESCRIPTION
 ===========
@@ -67,7 +72,7 @@ If you like this module, or what I’m doing more generally, committing to a [sm
 COPYRIGHT AND LICENSE
 =====================
 
-Copyright 2022 Elizabeth Mattijsen
+Copyright 2022, 2025 Elizabeth Mattijsen
 
 This library is free software; you can redistribute it and/or modify it under the Artistic License 2.0.
 

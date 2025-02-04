@@ -1,5 +1,5 @@
-use Ecosystem:ver<0.0.19>:auth<zef:lizmat>;
-use Identity::Utils:ver<0.0.10>:auth<zef:lizmat>;
+use Ecosystem:ver<0.0.29+>:auth<zef:lizmat>;
+use Identity::Utils:ver<0.0.18+>:auth<zef:lizmat> <build from short-name>;
 
 sub meh($message) { exit note $message }
 sub line() { say "-" x 80 }
@@ -22,7 +22,7 @@ sub resolve($ecosystem, $needle, $ver, $auth, $api, $from) {
       $needle, :$ver, :$auth, :$api, :$from
 }
 
-use CLI::Version:ver<0.0.8>:auth<zef:lizmat>
+use CLI::Version:ver<0.0.9+>:auth<zef:lizmat>
   $?DISTRIBUTION,
   proto sub MAIN(|) is export {*}
 
@@ -308,6 +308,7 @@ multi sub MAIN("unresolvable",
 Add --verbose to see all unresolvable identities";
     say "Add --from to also see identities with a :from<> setting"
       unless $from;
+
     line;
     if eco($ecosystem).unresolvable-dependencies(:all($verbose)) -> %ud {
         for %ud.keys.sort(*.fc) {
@@ -338,7 +339,7 @@ multi sub MAIN("unversioned",
     }
 }
 
-use shorten-sub-commands:ver<0.0.6>:auth<zef:lizmat> &MAIN;
+use shorten-sub-commands:ver<0.0.7+>:auth<zef:lizmat> &MAIN;
 
 =begin pod
 
